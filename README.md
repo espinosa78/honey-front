@@ -1,2 +1,2 @@
-# honey-front
-Projet Honey Patries - Réalisation de la landing page
+# Projet Honey Patry 
+- Réalisation de la landing page avec Nuxt (v1)
