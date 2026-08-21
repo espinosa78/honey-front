@@ -1,4 +1,4 @@
-import hero from "../assets/hero.webp"
+import hero from "../assets/images/hero.webp"
 
 function Banner() {
   return (
