@@ -5,13 +5,13 @@ function Header() {
       <nav>
         <ul className="flex gap-2 text-amber-900 font-bold">
           <li>
-            <a className="cursor-pointer">About</a>
+            <a className="cursor-pointer hover:text-amber-600">About</a>
           </li>
           <li>
-            <a className="cursor-pointer">Products</a>
+            <a className="cursor-pointer hover:text-amber-600">Products</a>
           </li>
           <li>
-            <a className="cursor-pointer">Contact</a>
+            <a className="cursor-pointer hover:text-amber-600">Contact</a>
           </li>
         </ul>
       </nav>
