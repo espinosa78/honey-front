@@ -54,7 +54,7 @@ function Contact() {
 
           <button
             type="submit"
-            className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-white transition hover:bg-amber-600 cursor-pointer"
+            className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-white transition hover:bg-amber-600"
           >
             Envoyer le message
           </button>

@@ -1,22 +1,47 @@
 function Header() {
   return (
-    <header className="flex justify-between bg-amber-200 px-8 py-5">
-      <h1 className="text-amber-900 font-extrabold text-lg">Honey Pastry</h1>
-      <nav>
-        <ul className="flex gap-2 text-amber-900 font-bold">
-          <li>
-            <a className="cursor-pointer hover:text-amber-600">About</a>
-          </li>
-          <li>
-            <a className="cursor-pointer hover:text-amber-600">Products</a>
-          </li>
-          <li>
-            <a className="cursor-pointer hover:text-amber-600">Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <header className="border-b border-amber-100 bg-amber-50">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+        <a
+          href="#"
+          className="text-xl font-extrabold tracking-tight text-amber-900"
+        >
+          Honey Pastry
+        </a>
+
+        <nav>
+          <ul className="flex items-center gap-6 text-sm font-semibold text-gray-700">
+            <li>
+              <a
+                href="#about"
+                className="transition-colors hover:text-amber-600"
+              >
+                À propos
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#services"
+                className="transition-colors hover:text-amber-600"
+              >
+                Prestations
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#contact"
+                className="transition-colors hover:text-amber-600"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-  )
+  );
 }
 
 export default Header;
