@@ -1,9 +1,13 @@
 function Footer() {
   return (
-    <footer className="bg-amber-200 px-8 py-5">
-      <p className="text-center text-amber-900">Copyright © Honey Pastry 2026</p>
+    <footer className="border-t border-amber-100 bg-amber-50">
+      <div className="mx-auto max-w-6xl px-6 py-8">
+        <p className="text-center text-sm text-gray-500">
+          © 2026 Honey Pastry. Tous droits réservés.
+        </p>
+      </div>
     </footer>
-  )
+  );
 }
 
 export default Footer;
