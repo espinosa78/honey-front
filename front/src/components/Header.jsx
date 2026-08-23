@@ -127,7 +127,7 @@ function Header() {
       </div>
 
       {/* Menu mobile */}
-      <MenuMobile />
+      <MenuMobile isOpen={isOpen} closeMenu={closeMenu} />
     </header>
   );
 }
