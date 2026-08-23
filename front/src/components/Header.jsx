@@ -4,7 +4,7 @@ function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <a
           href="#"
-          className="text-xl font-extrabold tracking-tight text-amber-900"
+          className="text-2xl font-bold tracking-tight text-amber-900 transition-colors hover:text-amber-600"
         >
           Honey Pastry
         </a>
