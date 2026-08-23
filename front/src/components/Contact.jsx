@@ -1,9 +1,9 @@
 function Contact() {
   return (
-    <section id="contact" className="bg-amber-100 py-20">
+    <section id="contact" className="scroll-mt-14 bg-amber-100 py-20">
       <div className="mx-auto max-w-3xl px-6">
         <h2 className="text-center text-4xl font-bold text-gray-900">
-          Me contacter
+          Nous contacter
         </h2>
 
         <p className="mt-4 text-center text-gray-600">
