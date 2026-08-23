@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="border-b border-amber-100 bg-amber-50">
+    <header className="fixed top-0 left-0 right-0 z-50border-b border-amber-100 bg-amber-50">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
         <a
           href="#"
