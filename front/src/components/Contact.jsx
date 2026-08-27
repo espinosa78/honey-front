@@ -1,4 +1,25 @@
+import { useState } from "react";
+
 function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    console.log(formData);
+  };
+
   return (
     <section id="contact" className="scroll-mt-14 bg-[#F9F5F6] py-20">
       <div className="mx-auto max-w-3xl px-6">
@@ -12,7 +33,7 @@ function Contact() {
           répondrons dans les plus brefs délais.
         </p>
 
-        <form className="mt-12 flex flex-col gap-6">
+        <form onSubmit={handleSubmit} className="mt-12 flex flex-col gap-6">
           <div className="flex flex-col gap-2">
             <label htmlFor="name" className="font-medium text-gray-700">
               Nom
@@ -22,6 +43,9 @@ function Contact() {
               id="name"
               type="text"
               placeholder="Votre nom"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
               className="rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-[#fc76a7]"
             />
           </div>
@@ -35,6 +59,9 @@ function Contact() {
               id="email"
               type="email"
               placeholder="votre@email.com"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               className="rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-[#fc76a7]"
             />
           </div>
@@ -48,6 +75,9 @@ function Contact() {
               id="message"
               rows={6}
               placeholder="Décrivez votre demande..."
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
               className="resize-none rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-[#fc76a7]"
             />
           </div>
