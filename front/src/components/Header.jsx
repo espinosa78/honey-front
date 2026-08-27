@@ -60,21 +60,21 @@ function Header() {
     >
       <div
         className={`mx-auto flex max-w-6xl items-center justify-between px-8 transition-all duration-300 ${
-          isScrolled ? "py-3" : "py-8"
+          isScrolled ? "py-3" : "py-5"
         }`}
       >
         {/* Logo */}
         <a
           href="#"
           onClick={closeMenu}
-          className="relative z-50 text-3xl font-bold tracking-tight text-[#fc76a7] transition-colors duration-200 hover:text-[#f19bc4]"
+          className="relative z-50 text-2xl font-bold tracking-tight text-[#fc76a7] transition-colors duration-200 hover:text-[#f19bc4]"
         >
           Honey Pastry
         </a>
 
         {/* Navigation desktop */}
         <nav className="hidden sm:block" aria-label="Navigation principale">
-          <ul className="flex items-center gap-7 text-xl font-semibold text-gray-700">
+          <ul className="flex items-center gap-7 text-sm font-semibold text-gray-700">
             <li>
               <a
                 href="#about"
@@ -116,7 +116,7 @@ function Header() {
           aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((current) => !current)}
-          className="relative z-50 text-amber-900 transition-colors duration-200 hover:text-amber-600 sm:hidden"
+          className="relative z-50 text-[#fc76a7] transition-colors duration-200 hover:text-[#f19bc4] sm:hidden"
         >
           {isOpen ? (
             <IoIosClose size={32} />

@@ -1,7 +1,7 @@
 function About() {
   return (
     <section id="about" className="scroll-mt-14 bg-[#F9F5F6] py-20">
-      <div className="mx-auto max-w-4xl px-">
+      <div className="mx-auto max-w-4xl px-6">
         <div className="text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-[#fc76a7]">
             Notre univers

@@ -41,7 +41,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="mt-12 border-t border-amber-100 pt-6">
+        <div className="mt-12 border-t border-[#fc76a7] pt-6">
           <p className="text-center text-sm text-gray-500">
             © 2026 Honey Pastry. Tous droits réservés.
           </p>
