@@ -54,57 +54,57 @@ function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "border-b border-amber-100 bg-amber-50/90 shadow-sm backdrop-blur-md"
+          ? "bg-[#F9F5F6] shadow-sm backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
       }`}
     >
       <div
-        className={`mx-auto flex max-w-6xl items-center justify-between px-6 transition-all duration-300 ${
-          isScrolled ? "py-3" : "py-5"
+        className={`mx-auto flex max-w-6xl items-center justify-between px-8 transition-all duration-300 ${
+          isScrolled ? "py-3" : "py-8"
         }`}
       >
         {/* Logo */}
         <a
           href="#"
           onClick={closeMenu}
-          className="relative z-50 text-2xl font-bold tracking-tight text-amber-900 transition-colors duration-200 hover:text-amber-600"
+          className="relative z-50 text-5xl font-bold tracking-tight text-[#fc76a7] transition-colors duration-200 hover:text-[#f19bc4]"
         >
           Honey Pastry
         </a>
 
         {/* Navigation desktop */}
         <nav className="hidden sm:block" aria-label="Navigation principale">
-          <ul className="flex items-center gap-7 text-sm font-semibold text-gray-700">
+          <ul className="flex items-center gap-7 text-xl font-semibold text-gray-700">
             <li>
               <a
                 href="#about"
-                className="group relative py-2 transition-colors duration-200 hover:text-amber-600"
+                className="group relative py-2 transition-colors duration-200 hover:text-[#fc76a7]"
               >
                 À propos
 
-                <span className="absolute bottom-0 left-0 h-px w-0 bg-amber-600 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 h-px w-0 bg-[#fc76a7] transition-all duration-300 group-hover:w-full" />
               </a>
             </li>
 
             <li>
               <a
                 href="#services"
-                className="group relative py-2 transition-colors duration-200 hover:text-amber-600"
+                className="group relative py-2 transition-colors duration-200 hover:text-[#fc76a7]"
               >
                 Prestations
 
-                <span className="absolute bottom-0 left-0 h-px w-0 bg-amber-600 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 h-px w-0 bg-[#fc76a7] transition-all duration-300 group-hover:w-full" />
               </a>
             </li>
 
             <li>
               <a
                 href="#contact"
-                className="group relative py-2 transition-colors duration-200 hover:text-amber-600"
+                className="group relative py-2 transition-colors duration-200 hover:text-[#fc76a7]"
               >
                 Nous contacter
 
-                <span className="absolute bottom-0 left-0 h-px w-0 bg-amber-600 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute bottom-0 left-0 h-px w-0 bg-[#fc76a7] transition-all duration-300 group-hover:w-full" />
               </a>
             </li>
           </ul>

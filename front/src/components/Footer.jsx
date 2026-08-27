@@ -2,10 +2,10 @@ import { FaInstagram, FaTiktok } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="border-t border-amber-100 bg-amber-50">
+    <footer className="bg-[#F9F5F6]">
       <div className="mx-auto max-w-6xl px-6 py-16">
         <div className="flex flex-col items-center text-center">
-          <h3 className="text-2xl font-bold tracking-tight text-amber-900">
+          <h3 className="text-2xl font-bold tracking-tight text-[#fc76a7]">
             Honey Pastry
           </h3>
 
@@ -20,7 +20,7 @@ function Footer() {
                 href="https://instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-gray-700 transition-colors hover:text-amber-600"
+                className="flex items-center gap-2 text-gray-700 transition-colors hover:text-[#fc76a7]"
               >
                 <FaInstagram size={22} />
                 <span>Instagram</span>
@@ -32,7 +32,7 @@ function Footer() {
                 href="https://tiktok.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-gray-700 transition-colors hover:text-amber-600"
+                className="flex items-center gap-2 text-gray-700 transition-colors hover:text-[#fc76a7]"
               >
                 <FaTiktok size={20} />
                 <span>TikTok</span>

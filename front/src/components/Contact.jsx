@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <section id="contact" className="scroll-mt-14 bg-amber-100 py-20">
+    <section id="contact" className="scroll-mt-14 bg-[#F9F5F6] py-20">
       <div className="mx-auto max-w-3xl px-6">
         <h2 className="text-center text-4xl font-bold text-gray-900">
           Nous contacter
@@ -22,7 +22,7 @@ function Contact() {
               id="name"
               type="text"
               placeholder="Votre nom"
-              className="rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-amber-500"
+              className="rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-[#fc76a7]"
             />
           </div>
 
@@ -35,7 +35,7 @@ function Contact() {
               id="email"
               type="email"
               placeholder="votre@email.com"
-              className="rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-amber-500"
+              className="rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-[#fc76a7]"
             />
           </div>
 
@@ -48,13 +48,13 @@ function Contact() {
               id="message"
               rows={6}
               placeholder="Décrivez votre demande..."
-              className="resize-none rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-amber-500"
+              className="resize-none rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-[#fc76a7]"
             />
           </div>
 
           <button
             type="submit"
-            className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-white transition hover:bg-amber-600"
+            className="rounded-xl bg-[#fc76a7] px-6 py-3 font-semibold text-white transition hover:bg-[#f19bc4]"
           >
             Envoyer le message
           </button>

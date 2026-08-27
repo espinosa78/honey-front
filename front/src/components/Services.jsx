@@ -1,10 +1,10 @@
 function Services() {
   return (
-    <section id="services" className="scroll-mt-14 bg-white py-20">
+    <section id="services" className="scroll-mt-14 bg-[#F9F5F6] py-20">
       <div className="mx-auto max-w-6xl px-6">
         {/* Section heading */}
         <div className="text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#fc76a7]">
             Ce que nous proposons
           </p>
 
@@ -21,7 +21,7 @@ function Services() {
         {/* Service 1 */}
         <div className="mt-16 grid items-center gap-10 md:grid-cols-2 md:gap-16">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#fc76a7]">
               01
             </p>
 
@@ -38,25 +38,25 @@ function Services() {
 
             <button
               type="button"
-              className="mt-6 rounded-xl bg-amber-500 px-6 py-3 font-semibold text-white transition hover:bg-amber-600"
+              className="mt-6 rounded-xl bg-[#fc76a7] px-6 py-3 font-semibold text-white transition hover:bg-[#f19bc4]"
             >
               En savoir plus
             </button>
           </div>
 
-          <div className="aspect-square overflow-hidden rounded-2xl bg-amber-100">
+          <div className="aspect-square overflow-hidden rounded-2xl bg-[#F8E8EE]">
             {/* Carousel à venir */}
           </div>
         </div>
 
         {/* Service 2 */}
         <div className="mt-24 grid items-center gap-10 md:grid-cols-2 md:gap-16">
-          <div className="order-2 aspect-square overflow-hidden rounded-2xl bg-amber-100 md:order-1">
+          <div className="order-2 aspect-square overflow-hidden rounded-2xl bg-[#F8E8EE] md:order-1">
             {/* Carousel à venir */}
           </div>
 
           <div className="order-1 md:order-2">
-            <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#fc76a7]">
               02
             </p>
 
@@ -72,7 +72,7 @@ function Services() {
 
             <button
               type="button"
-              className="mt-6 rounded-xl bg-amber-500 px-6 py-3 font-semibold text-white transition hover:bg-amber-600"
+              className="mt-6 rounded-xl bg-[#fc76a7] px-6 py-3 font-semibold text-white transition hover:bg-[#f19bc4]"
             >
               En savoir plus
             </button>
@@ -82,7 +82,7 @@ function Services() {
         {/* Service 3 */}
         <div className="mt-24 grid items-center gap-10 md:grid-cols-2 md:gap-16">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-widest text-amber-600">
+            <p className="text-sm font-semibold uppercase tracking-widest text-[#fc76a7]">
               03
             </p>
 
@@ -98,13 +98,13 @@ function Services() {
 
             <button
               type="button"
-              className="mt-6 rounded-xl bg-amber-500 px-6 py-3 font-semibold text-white transition hover:bg-amber-600"
+              className="mt-6 rounded-xl bg-[#fc76a7] px-6 py-3 font-semibold text-white transition hover:bg-[#f19bc4]"
             >
               En savoir plus
             </button>
           </div>
 
-          <div className="aspect-square overflow-hidden rounded-2xl bg-amber-100">
+          <div className="aspect-square overflow-hidden rounded-2xl bg-[#F8E8EE]">
             {/* Carousel à venir */}
           </div>
         </div>
