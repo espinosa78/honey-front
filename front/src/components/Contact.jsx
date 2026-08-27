@@ -28,7 +28,11 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log("handleSubmit exécuté");
+
     const newErrors = validateForm();
+
+    console.log("Erreurs :", newErrors);
 
     setErrors(newErrors);
 
