@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-
 import MenuMobile from "./MenuMobile";
 
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -54,34 +53,36 @@ function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#F9F5F6] shadow-sm backdrop-blur-md"
+          ? "bg-[#F9F5F6]/95 shadow-sm backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
       }`}
     >
       <div
-        className={`mx-auto flex max-w-6xl items-center justify-between px-8 transition-all duration-300 ${
-          isScrolled ? "py-3" : "py-5"
+        className={`mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-8 lg:px-10 transition-all duration-300 ${
+          isScrolled ? "py-3" : "py-6"
         }`}
       >
         {/* Logo */}
         <a
           href="#"
           onClick={closeMenu}
-          className="relative z-50 text-2xl font-bold tracking-tight text-[#fc76a7] transition-colors duration-200 hover:text-[#f19bc4]"
+          className="relative z-50 text-3xl font-bold tracking-tight text-[#fc76a7] transition-colors duration-200 hover:text-[#f19bc4]"
         >
           Honey Pastry
         </a>
 
         {/* Navigation desktop */}
-        <nav className="hidden sm:block" aria-label="Navigation principale">
-          <ul className="flex items-center gap-7 text-sm font-semibold text-gray-700">
+        <nav
+          className="hidden sm:block"
+          aria-label="Navigation principale"
+        >
+          <ul className="flex items-center gap-10 text-base font-semibold text-gray-700">
             <li>
               <a
                 href="#about"
                 className="group relative py-2 transition-colors duration-200 hover:text-[#fc76a7]"
               >
                 À propos
-
                 <span className="absolute bottom-0 left-0 h-px w-0 bg-[#fc76a7] transition-all duration-300 group-hover:w-full" />
               </a>
             </li>
@@ -92,7 +93,6 @@ function Header() {
                 className="group relative py-2 transition-colors duration-200 hover:text-[#fc76a7]"
               >
                 Prestations
-
                 <span className="absolute bottom-0 left-0 h-px w-0 bg-[#fc76a7] transition-all duration-300 group-hover:w-full" />
               </a>
             </li>
@@ -103,7 +103,6 @@ function Header() {
                 className="group relative py-2 transition-colors duration-200 hover:text-[#fc76a7]"
               >
                 Nous contacter
-
                 <span className="absolute bottom-0 left-0 h-px w-0 bg-[#fc76a7] transition-all duration-300 group-hover:w-full" />
               </a>
             </li>
@@ -119,9 +118,9 @@ function Header() {
           className="relative z-50 text-[#fc76a7] transition-colors duration-200 hover:text-[#f19bc4] sm:hidden"
         >
           {isOpen ? (
-            <IoIosClose size={32} />
+            <IoIosClose size={34} />
           ) : (
-            <RxHamburgerMenu size={25} />
+            <RxHamburgerMenu size={28} />
           )}
         </button>
       </div>
