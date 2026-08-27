@@ -7,18 +7,60 @@ function Contact() {
     message: "",
   });
 
+  const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   const handleChange = (e) => {
+    const { name, value} = e.target;
+
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [name]: value,
+    });
+
+    setErrors({
+      ...errors,
+      [name]: "",
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    const newErrors = validateForm();
+
+    setErrors(newErrors);
+
+    if (Object.keys(newErrors).length > 0) {
+      return;
+    }
+
     console.log(formData);
+
+    setIsSubmitted(true);
   };
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Le nom est obligatoire.";
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = "L'adresse e-mail est obligatoire.";
+    } else if (!emailRegex.test(formData.email)) {
+      newErrors.email = "Veuillez entrer une adresse e-mail valide."
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = "Le message est obligatoire.";
+    }
+
+    return newErrors;
+  }
 
   return (
     <section id="contact" className="scroll-mt-14 bg-[#F9F5F6] py-20">
@@ -46,8 +88,14 @@ function Contact() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-[#fc76a7]"
+              className={`rounded-xl border bg-white px-4 py-3 outline-none transition ${errors.name ? "border-[#D96C8A]" : "border-gray-300 focus:border-[#fc76a7]"} `}
             />
+
+            {errors.name && (
+              <p className="text-sm text-[#D96C8A]">
+                {errors.name}
+              </p>
+            )} 
           </div>
 
           <div className="flex flex-col gap-2">
@@ -62,8 +110,14 @@ function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-[#fc76a7]"
+              className={`rounded-xl border bg-white px-4 py-3 outline-none transition ${errors.name ? "border-[#D96C8A]" : "border-gray-300 focus:border-[#fc76a7]"} `}
             />
+
+            {errors.email && (
+              <p className="text-sm text-[#D96C8A]">
+                {errors.email}
+              </p>
+            )} 
           </div>
 
           <div className="flex flex-col gap-2">
@@ -78,8 +132,14 @@ function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="resize-none rounded-xl border border-gray-300 bg-white px-4 py-3 outline-none transition focus:border-[#fc76a7]"
+              className={`rounded-xl border bg-white px-4 py-3 outline-none transition ${errors.name ? "border-[#D96C8A]" : "resize-none border-gray-300 focus:border-[#fc76a7]"}`}
             />
+
+            {errors.message && (
+              <p className="text-sm text-[#D96C8A]">
+                {errors.message}
+              </p>
+            )} 
           </div>
 
           <button
@@ -89,6 +149,12 @@ function Contact() {
             Envoyer le message
           </button>
         </form>
+
+        {isSubmitted && (
+          <p className="mt-6 text-center font-medium text-[#6F8F7A]">
+            Votre message a bien été envoyé !
+          </p>
+        )}
       </div>
     </section>
   );
