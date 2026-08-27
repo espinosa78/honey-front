@@ -40,13 +40,17 @@ function Contact() {
       const form = e.target;
       const data = new FormData(form);
 
-      await fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
         body: new URLSearchParams(data).toString(),
       });
+
+      if (!response.ok) {
+        throw new Error("Erreur lors de l'envoi du formulaire.");
+      }
 
       setIsSubmitted(true);
     } catch (error) {
@@ -94,7 +98,6 @@ function Contact() {
 
         <form 
           name="contact"
-          netlify
           method="POST"
           data-netlify="true"
           onSubmit={handleSubmit} 
