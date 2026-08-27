@@ -94,6 +94,7 @@ function Contact() {
 
         <form 
           name="contact"
+          netlify
           method="POST"
           data-netlify="true"
           onSubmit={handleSubmit} 
