@@ -67,7 +67,7 @@ function Header() {
         <a
           href="#"
           onClick={closeMenu}
-          className="relative z-50 text-5xl font-bold tracking-tight text-[#fc76a7] transition-colors duration-200 hover:text-[#f19bc4]"
+          className="relative z-50 text-3xl font-bold tracking-tight text-[#fc76a7] transition-colors duration-200 hover:text-[#f19bc4]"
         >
           Honey Pastry
         </a>
